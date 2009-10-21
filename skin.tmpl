@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
+	<link rel="stylesheet" type="text/css" href="$SkinDirUrl/images/default.css" media="screen" title="style (screen)" />
+	<link rel="stylesheet" type="text/css" href="$SkinDirUrl/color-$SkinColor/default.css" media="screen" title="style (screen)" />
+<!--HTMLHeader-->
+</head>
+<body>
+<div id="wrap">
+
+	<div id="header">
+		<div class="pageactions">
+			<!--PageActionFmt-->
+			<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
+			<!--/PageActionFmt-->
+		</div>
+
+		<div id="logo-box">
+			<!--PageHeaderFmt-->
+			<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader-->
+			<!--/PageHeaderFmt-->
+		</div>
+		<div class="headerphoto"></div>
+	</div>
+
+	<div id="menu">
+		<!--PageTabsFmt-->
+		<!--wiki:{$Group}.SiteNav {$SiteGroup}.SiteNav -->
+		<!--/PageTabsFmt-->
+	</div>
+
+	<div id="content-wrap"><div id="content">
+		<div id="main">
+			<!--PageTitleGroupFmt-->
+			<a href='{$ScriptUrl}/{$Group}' class="pagegroup">{$Group}</a>
+			<!--/PageTitleGroupFmt-->
+			<!--PageTitleFmt-->
+			<h2 class='page-head'><a href='{$PageUrl}'>{$Titlespaced}</a></h2>
+			<!--/PageTitleFmt-->
+
+			<!--PageText-->
+		</div>
+
+		<div id="sidebar" >
+			<!--PageSearchFmt-->
+			<p class="sidehead clear" class="searchform">$[Search]</p>
+			<form id="searchform" class="searchform" action='$ScriptUrl' method="get"><fieldset><p>
+				<input type='hidden' name='n' value='{$FullName}' />
+				<input type='hidden' name='action' value='search' />
+				<input id='s' class='textbox' type='text' name='q' value="" />
+				<input id='searchsubmit' class='button' type='submit' value='$[Go]' />
+			</p></fieldset></form>
+			<!--/PageSearchFmt-->
+
+			<!--PageRightFmt-->
+			<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
+			<!--/PageRightFmt-->
+		</div>
+	</div></div>
+
+	<div id="footer">
+		<!--PageFooterFmt-->
+			<!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter-->
+		<!--/PageFooterFmt-->
+		<p class="credits">
+			<a href="http://pmwiki.com/Cookbook/Enlighten">Enlighten</a> $[theme originally by] <a href="http://www.styleshout.com/templates/preview/Enlighten1-1/index.html">styleshout</a>, $[adapted by] <a href="http://solidgone.org/Skins">David Gilbert</a>, $[powered by] <!--function:dg_PoweredBy-->
+		</p>
+	</div>
+
+</div>
+</body>
+</html>
