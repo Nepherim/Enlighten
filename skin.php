@@ -15,18 +15,21 @@ global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt ,$Ski
 if (!empty($PageLogoUrl)) {
 	dg_SetLogoHeightWidth(15, 16);
 	$HTMLStylesFmt['enlighten'] .=
-		'#XXlogo .sitetitle a{height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left 16px no-repeat} '.
-		'#XXlogo .sitetitle a, #XXlogo .sitetag{padding-left: ' .$PageLogoUrlWidth .'} ';
+		'#logo-box .sitetitle a{ height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left 16px no-repeat; } '.
+		'#logo-box .sitetitle a, #logo-box .sitetag{ padding-left: ' .$PageLogoUrlWidth .'; } ';
 }
 global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit;
 SDV($SkinWidth,850);
-SDV($SkinSidebarWidth,195);  #good percentage width is 25
+SDV($SkinSidebarWidth,212);  #good percentage width is 25
 SDV($SkinWidthUnit,'px');  #only use 'px' or '%'
-$HTMLStylesFmt['enlighten'] .=	'#XXheader, #XXpage, #XXfooter-inner { width: '.$SkinWidth.$SkinWidthUnit.'; } '.
-	'#XXcontent { width: '.($SkinWidthUnit=='px'?($SkinWidth-$SkinSidebarWidth-55) :(100-$SkinSidebarWidth-5)) .$SkinWidthUnit.'; } '.
-	'#XXsidebar { width: '.$SkinSidebarWidth .$SkinWidthUnit.'; } ';
-
-$SkinColor = dg_SetSkinColor('brown', array());
+$HTMLStylesFmt['enlighten'] .=	'#wrap { width: '.$SkinWidth.$SkinWidthUnit.'; } '.
+	'#sidebar { width: '.$SkinSidebarWidth.'px; margin-left: -'.($SkinSidebarWidth+10).'px; } '.
+	'#content { margin-right: '.($SkinSidebarWidth+2).'px; } ';
+/*
+#header #logo-box { width: 390px; }
+#header .headerphoto { width: 455px; }
+*/
+$SkinColor = dg_SetSkinColor('brown', array('brown'));
 
 # ----------------------------------------
 # - Standard Skin Setup
