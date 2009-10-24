@@ -1,0 +1,95 @@
+body { color: #444; background: #EDE8E2; }
+
+/* links */
+a { color: #6C8C37; }
+a:hover { color: #009193; }
+
+/* headers */
+h1, h2, h3, h4, h5, h6, .sidehead { color: #333; }
+
+/* images */
+img {
+ border-color: #DDD;
+ background-color: #FFF; }
+
+#wikitext pre.escaped { background: #FAFAFA; border-color: #eee; }
+acronym { border-bottom-color: #777; }
+blockquote { background: #FAFAFA url(quote.gif) no-repeat 3px 5px; border-color: #eee; color: #666666; }
+
+th strong { color: #fff; }
+th { background-color: #6C8C37; color: #FFF; border-left-color: #D68686; border-bottom-color: #FFF; }
+td { border-left-color: #E8E8E8; border-bottom-color: #DFDFDF; }
+tr.row-a { background-color: #F8F8F8; }
+tr.row-b { background-color: #EFEFEF; }
+
+/* form elements */
+form { border-color: #eee; background-color: #FAFAFA; }
+input { border-color: #eee; color:#777; }
+textarea { border-color: #eee; color:#777; }
+input.button, input.inputbutton { border-color: #CCC; background-color: #FFF; color: #333; }
+
+/* search form */
+.searchform input.textbox { color: #333; }
+.searchform input.button { color: #333; }
+
+/*********************** LAYOUT
+************************/
+#wrap { background-color: #FFF; }
+
+/* header */
+#header { background: #FFF; }
+#header .headerphoto { background: #FFF url(headerphoto.jpg) no-repeat; }
+#header #logo-box { background-color: #A3C159; }
+#logo-box h1#logo, #logo-box h1.sitetitle { color: #FFF; }
+#logo-box h1#logo a, #logo-box h1.sitetitle a { color: #FFF; }
+#logo-box #slogan, #logo-box .sitetag { color: #FFFFCC; }
+
+/* header menu */
+#menu ul { color: #FFF; background-color: #A3C159; border-bottom-color: #FFF; }
+#menu li a { color: #FFF; }
+#menu li a:hover { background-color: #1BA6B2; color: #FFF; }
+#menu li a#current, #menu li a.selflink { background-color: #6C8C37; color: #FFF; }
+
+/* content */
+#body-wrap { background-color: #FFFFFF; }
+#content-wrap { background-color: #FFFFFF; }
+#content { background: #FFFFFF url(divider.jpg) repeat-y scroll right top; }
+
+/* sidebar */
+#sidebar { background: #FFFFFF url(divider.jpg) repeat-y scroll left top; }
+#sidebar h1, #sidebar .sidehead { color: #6C8C37; }
+
+/* sidebar menu */
+#sidebar ul a { color: #333; border-bottom-color: #D5D5D5; }
+#sidebar ul a.top{ border-top-color: #D5D5D5; }
+#sidebar ul a:hover { border-left-color: #6C8C37; color: #6C8C37; }
+
+/* main */
+#main h2 { border-bottom-color: #D5D5D5; }
+#main ul li { list-style-image: url(bullet.gif); }
+
+.post .post-footer { background-color: #fafafa; border-color: #eee; }
+.post .post-footer .date { background: url(clock.gif) no-repeat 0 center; }
+.post .post-footer .comments { background: url(comment.gif) no-repeat 0 center; }
+.post .post-footer .tags { background: url(page.gif) no-repeat 0 center; }
+
+/* footer */
+#footer { background-color: #FFFFFF; color: #666666; }
+#footer a { color: #777; }
+#footer a:hover { color: #333; }
+
+/* additional classes */
+.gray { color: #BFBFBF; }
+
+
+/* PmWiki Mods */
+#wikitext code.escaped { background-color: #FAFAFA; border-color: #eee; }
+.quickref { color: #000; background-color: #FAFAFA !important; }
+
+/* PmWiki Additions */
+#header .pageactions ul li a { color: #bbb; }
+
+/* BlogIt */
+.blogit-newer-entries a, .previous-entries a { background: url(images/mini-nav-left.gif) no-repeat left center; }
+.blogit-older-entries a, .next-entries a { background: url(images/mini-nav-right.gif) no-repeat right center; }
+

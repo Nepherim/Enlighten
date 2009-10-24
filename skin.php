@@ -29,7 +29,7 @@ $HTMLStylesFmt['enlighten'] .=	'#wrap { width: '.$SkinWidth.$SkinWidthUnit.'; } 
 #header #logo-box { width: 390px; }
 #header .headerphoto { width: 455px; }
 */
-$SkinColor = dg_SetSkinColor('brown', array('brown'));
+$SkinColor = dg_SetSkinColor('brown', array('brown','green','orange','blue'));
 
 # ----------------------------------------
 # - Standard Skin Setup
