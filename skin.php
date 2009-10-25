@@ -25,10 +25,6 @@ SDV($SkinWidthUnit,'px');  #only use 'px' or '%'
 $HTMLStylesFmt['enlighten'] .=	'#wrap { width: '.$SkinWidth.$SkinWidthUnit.'; } '.
 	'#sidebar { width: '.$SkinSidebarWidth.'px; margin-left: -'.($SkinSidebarWidth+10).'px; } '.
 	'#content { margin-right: '.($SkinSidebarWidth+2).'px; } ';
-/*
-#header #logo-box { width: 390px; }
-#header .headerphoto { width: 455px; }
-*/
 $SkinColor = dg_SetSkinColor('brown', array('brown','green','orange','blue'));
 
 # ----------------------------------------

@@ -306,7 +306,6 @@ input.button, input.inputbutton {
 	clear: both;
 	margin: 0; padding: 12px 0 0 0;
 	font: normal .92em/1.5em 'Trebuchet MS', Tahoma, Arial, sans-serif;
-	height: 45px;
 	text-align: center;
 }
 #footer p {
