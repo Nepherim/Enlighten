@@ -38,7 +38,6 @@ input.button, input.inputbutton { border-color: #CCC; background-color: #FFF; co
 
 /* header */
 #header { background: #FFF; }
-#header .headerphoto { background: #FFF url(headerphoto.jpg) no-repeat; }
 #header #logo-box { background-color: #4E3525; }
 #logo-box h1#logo, #logo-box h1.sitetitle { color: #FFF; }
 #logo-box h1#logo a, #logo-box h1.sitetitle a { color: #FFF; }
@@ -60,9 +59,10 @@ input.button, input.inputbutton { border-color: #CCC; background-color: #FFF; co
 #sidebar h1, #sidebar .sidehead { color: #660000; }
 
 /* sidebar menu */
-#sidebar ul a { color: #333; border-bottom-color: #D5D5D5; }
-#sidebar ul a.top{ border-top-color: #D5D5D5; }
-#sidebar ul a:hover { border-left-color: #993333; color: #993333; }
+#sidebar ul a { color: #333; }
+#sidebar ul li { border-bottom-color: #D5D5D5; }
+#sidebar ul li{ border-top-color: #D5D5D5; }
+#sidebar ul li:hover { border-left-color: #993333; color: #993333; }
 
 /* main */
 #main h2 { border-bottom-color: #D5D5D5; }

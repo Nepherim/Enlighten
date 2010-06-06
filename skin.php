@@ -18,7 +18,7 @@ if (!empty($PageLogoUrl)) {
 		'#logo-box .sitetitle a{ height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left 16px no-repeat; } '.
 		'#logo-box .sitetitle a, #logo-box .sitetag{ padding-left: ' .$PageLogoUrlWidth .'; } ';
 }
-global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit;
+global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit,$SkinHeaderBackground,$SkinDirUrl;
 SDV($SkinWidth,850);
 SDV($SkinSidebarWidth,212);  #good percentage width is 25
 SDV($SkinWidthUnit,'px');  #only use 'px' or '%'
@@ -26,6 +26,9 @@ $HTMLStylesFmt['enlighten'] .=	'#wrap { width: '.$SkinWidth.$SkinWidthUnit.'; } 
 	'#sidebar { width: '.$SkinSidebarWidth.'px; margin-left: -'.($SkinSidebarWidth+10).'px; } '.
 	'#content { margin-right: '.($SkinSidebarWidth+2).'px; } ';
 $SkinColor = dg_SetSkinColor('brown', array('brown','green','orange','blue'));
+
+SDV($SkinHeaderBackground, 'headerphoto.jpg');
+$HTMLStylesFmt['enlighten'] .= '#header .headerphoto { background: #FFF url('.$SkinDirUrl.'/'.$SkinHeaderBackground.') no-repeat; } ';
 
 # ----------------------------------------
 # - Standard Skin Setup

@@ -23,7 +23,7 @@ h4, h5, h6 { font-size: 1.2em; }
 p, h1, h2, h3, h4, h5, h6, .sidehead, .post-footer, #wikitext pre.escaped {
 	margin: 10px 15px;
 }
-ul, ol {
+dl, ul, ol {
 	margin: 10px 30px;
 	padding: 0 15px;
 }
@@ -247,22 +247,21 @@ input.button, input.inputbutton {
 	padding: 0;
 }
 #sidebar ul li {
-	padding: 0px 10px;
-}
-#sidebar ul a {
-	display:block;
-	font-weight:normal;
+	margin: 0 10px;
 	padding:.3em 0 .3em 15px;
 	line-height: 1.5em;
 	border-bottom: 1px dashed;
+}
+#sidebar ul a {
+	font-weight:normal;
 	text-decoration:none;
 }
 #sidebar ul a.top{
 	border-top: 1px dashed;
 }
-#sidebar ul a:hover {
-	padding: .3em 0 .3em 10px;
+#sidebar ul li:hover {
 	border-left: 5px solid;
+	padding-left: 10px;
 }
 
 /* main */
@@ -275,6 +274,9 @@ input.button, input.inputbutton {
 	border-bottom: 1px dashed;
 }
 #main ul li {
+}
+#main dd {
+	padding-left: 20px;
 }
 
 .post {
