@@ -2,14 +2,14 @@
 /* PmWiki Enlighten skin
  *
  * Examples at: http://pmwiki.com/Cookbook/Enlighten and http://solidgone.org/Skins/
- * Copyright (c) 2010 David Gilbert
- * This work is licensed under a Creative Commons Attribution-Share Alike 3.0 United States License.
+ * Copyright (c)2016 David Gilbert
+ * This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License.
  * Please retain the links in the footer.
- * http://creativecommons.org/licenses/by-sa/3.0/us/
+ * http://creativecommons.org/licenses/by-sa/4.0/
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Enlighten"';
-$FmtPV['$SkinVersion'] = '"1.1.0"';
+$FmtPV['$SkinVersion'] = '"1.1.1"';
 
 global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt ,$SkinTheme;
 if (!empty($PageLogoUrl)) {
@@ -38,18 +38,18 @@ $FmtPV['$WikiTag'] = '$GLOBALS["WikiTag"]';
 
 # Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
 $FmtPV['$LeftColumn'] = "\$GLOBALS['TmplDisplay']['PageLeftFmt']";
-Markup('noleft', 'directives',  '/\\(:noleft:\\)/ei', "SetTmplDisplay('PageLeftFmt',0)");
+Markup_e'noleft', 'directives',  '/\\(:noleft:\\)/i', "SetTmplDisplay('PageLeftFmt',0)");
 $FmtPV['$RightColumn'] = "\$GLOBALS['TmplDisplay']['PageRightFmt']";
-Markup('noright', 'directives',  '/\\(:noright:\\)/ei', "SetTmplDisplay('PageRightFmt',0)");
+Markup_e'noright', 'directives',  '/\\(:noright:\\)/i', "SetTmplDisplay('PageRightFmt',0)");
 $FmtPV['$ActionBar'] = "\$GLOBALS['TmplDisplay']['PageActionFmt']";
-Markup('noaction', 'directives',  '/\\(:noaction:\\)/ei', "SetTmplDisplay('PageActionFmt',0)");
+Markup_e'noaction', 'directives',  '/\\(:noaction:\\)/i', "SetTmplDisplay('PageActionFmt',0)");
 $FmtPV['$TabsBar'] = "\$GLOBALS['TmplDisplay']['PageTabsFmt']";
-Markup('notabs', 'directives',  '/\\(:notabs:\\)/ei', "SetTmplDisplay('PageTabsFmt',0)");
+Markup_e'notabs', 'directives',  '/\\(:notabs:\\)/i', "SetTmplDisplay('PageTabsFmt',0)");
 $FmtPV['$SearchBar'] = "\$GLOBALS['TmplDisplay']['PageSearchFmt']";
-Markup('nosearch', 'directives',  '/\\(:nosearch:\\)/ei', "SetTmplDisplay('PageSearchFmt',0)");
+Markup_e'nosearch', 'directives',  '/\\(:nosearch:\\)/i', "SetTmplDisplay('PageSearchFmt',0)");
 $FmtPV['$TitleGroup'] = "\$GLOBALS['TmplDisplay']['PageTitleGroupFmt']";
-Markup('notitlegroup', 'directives',  '/\\(:notitlegroup:\\)/ei', "SetTmplDisplay('PageTitleGroupFmt',0)");
-Markup('notitle', 'directives',  '/\\(:notitle:\\)/ei', "SetTmplDisplay('PageTitleFmt',0); SetTmplDisplay('PageTitleGroupFmt',0)");
+Markup_e'notitlegroup', 'directives',  '/\\(:notitlegroup:\\)/i', "SetTmplDisplay('PageTitleGroupFmt',0)");
+Markup_e'notitle', 'directives',  '/\\(:notitle:\\)/i', "SetTmplDisplay('PageTitleFmt',0); SetTmplDisplay('PageTitleGroupFmt',0)");
 Markup('fieldset', 'inline', '/\\(:fieldset:\\)/i', "<fieldset>");
 Markup('fieldsetend', 'inline', '/\\(:fieldsetend:\\)/i', "</fieldset>");
 
