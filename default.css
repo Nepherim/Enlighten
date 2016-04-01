@@ -250,7 +250,7 @@ input.button, input.inputbutton {
 	margin: 0 10px;
 	padding:.3em 0 .3em 15px;
 	line-height: 1.5em;
-	border-bottom: 1px dashed;
+	border-bottom: #d5d4d0 1px dashed;
 }
 #sidebar ul a {
 	font-weight:normal;
@@ -340,7 +340,7 @@ fieldset { margin: 0; padding: 0; border-style: none; }
 /* PmWiki Mods */
 a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:-0.5em; }
 #menu a.createlink { display: none; }
-#wikitext hr { border:2px solid; margin:2em 0; }
+#wikitext hr { border:#d5d4d0 1px solid; margin:2em 0; }
 #wikitext code.escaped { padding: .15em; font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace; border: 1px solid; }
 #wikitext .quickref p, #wikitext .quickref .outdent, #wikitext .quickref div, #wikitext .quickref strong {font-size:1em; margin:0; text-align:left; text-indent:0; line-height: 2em}
 #wikiedit, #wikiedit form input[type=submit] { margin-top: 25px; }
@@ -374,3 +374,6 @@ a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:
 #commentblock form br { margin: 1px 0; display: block; }
 #commentblock li.comment { padding-top: 10px; }
 #commentblock li.comment a.wikilink { font-size: .8em; }
+#wikitext ul.metadata {list-style-image: none; display: inline; margin: 0; padding: 0;}
+#wikitext .post-footer ul.metadata li {margin: 0; padding: 0; list-style-type: none;list-style-image: none; display: inline;}
+#wikitext .post-footer p {visibility: hidden; display: none; margin: 0;}

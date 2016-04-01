@@ -9,7 +9,7 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Enlighten"';
-$FmtPV['$SkinVersion'] = '"1.1.1"';
+$FmtPV['$SkinVersion'] = '"1.1.2"';
 
 global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt ,$SkinTheme;
 if (!empty($PageLogoUrl)) {
